@@ -51,12 +51,16 @@ class StatHandler():
             self.stats[stat]["temp"] = 0
             self.set_derived_stats()
 
-    def effect(self, stat, eff_name, mod=0, desc=""):
+    def effect(self, stat, eff_name, mod=0, desc="", remove=False):
         """
-        Set a new effect on a stat.
+        Set a new effect on a stat, or remove an existing effect.
         """
         self.stats[stat]["effects"].append(
             {"name": eff_name, "mod": mod, "desc": desc})
+        if remove:
+            for effect in self.stats[stat]["effects"]:
+                if effect["name"].lower() == eff_name.lower():
+                    self.stats[stat]["effects"].remove(effect)
 
     def set_derived_stats(self):
         # Check for the existance of pre-req stats then calculate derived.
