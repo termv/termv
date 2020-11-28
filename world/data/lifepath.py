@@ -280,7 +280,8 @@ FAMILY_CRISIS = (
     "Your family was imprisoned and you alone escaped.",
     "Your family vanished. You are the only remaining member.",
     "Your family was killed and you were the only survivor",
-    "Your family was involved with a long term conspiracy, organization, or assiociation, such as a crime family or revolutionary group."
+    "Your family was involved with a long term conspiracy, organization, or assiociation, such as a crime family or\
+     revolutionary group."
     "Your family was scattered to the winds due to misfortune.",
     "Your family was cursed with a hereditary feud that has lasted for generations.",
     "You are the inheritor of a family debt; You must honor this debt before moving on with your life."
@@ -369,7 +370,6 @@ TRAGIC_LOVE_AFFAIR = (
     "a rival cut you out of the action.",
     "Your lover is imprisoned or exiled."
 )
-
 
 # Your Life Goals
 
