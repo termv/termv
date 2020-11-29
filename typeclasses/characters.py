@@ -8,6 +8,9 @@ creation commands.
 
 """
 from evennia import DefaultCharacter
+from world.data.stats import StatHandler
+from world.data.skills import SkillHandler
+from world.data.cyberware import CyberHandler
 
 
 class Character(DefaultCharacter):
@@ -31,4 +34,7 @@ class Character(DefaultCharacter):
 
     """
 
-    pass
+    def at_object_creation(self):
+        self.db.stats = StatHandler()
+        self.db.skills = SkillHandler()
+        self.db.cyberware = CyberHandler()
