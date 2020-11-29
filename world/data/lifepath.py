@@ -1,132 +1,19 @@
 # Cultural Origins
 BASIC_LIFEPATH = {
-    "cultural Origins": [
-        {
-            "name": "North American",
-            "lang": (
-                "Chineese",
-                "Cree",
-                "Creole",
-                "English",
-                "French",
-                "Navajo",
-                "Spanish"
-            )
-        },
-        {
-            "name": "South/Central American",
-            "lang": (
-                "Creole",
-                "English",
-                "German",
-                "Guarani",
-                "Mayan",
-                "Portugese",
-                "Quechua",
-                "Spanish"
-            )
-        },
-        {
-            "Name": "Western European",
-            "langs": (
-                "Dutcch",
-                "English",
-                "French",
-                "German",
-                "Italian",
-                "Norwegian",
-                "Portuguese",
-                "spanish"
-            )
-        },
-        {
-            "name": "Eastern European",
-            "langs": (
-                "English",
-                "Finnish",
-                "Polish",
-                "Romanian",
-                "Russian",
-                "Ukranian"
-            )
-        },
-        {
-            "name": "Middle Eastern/North African",
-            "langs": (
-                "Arabic",
-                "Burber",
-                "English",
-                "Farsi",
-                "French",
-                "Hebrew",
-                "Turkish"
-            )
-        },
-        {
-            "name": "Sub-Saharan African",
-            "langs": (
-                "Arabic",
-                "English",
-                "French",
-                "Hausa",
-                "Lingala",
-                "Oromo",
-                "Portugese",
-                "Swahihli",
-                "Twi",
-                "Yoruba"
-            )
-        },
-        {
-            "name": "South Asian",
-            "langs": (
-                "Bengali",
-                "Dari",
-                "English",
-                "Hindi",
-                "Nepali",
-                "Sinhalese",
-                "Tamil",
-                "Urdu"
-            )
-        },
-        {
-            "name": "South East Asian",
-            "langs": (
-                "Arabic",
-                "English",
-                "Filipeno",
-                "Hindi",
-                "Indonesian",
-                "Khmer",
-                "Malayan",
-                "Vietnamese"
-            )
-        },
-        {
-            "name": "East Asian",
-            "langs": (
-                "Cantonese",
-                "Chinese",
-                "English",
-                "Japanese",
-                "Korean",
-                "Mandarin Chinese",
-                "Mongolian"
-            )
-        },
-        {
-            "name": "Oceana/Pacific Islander",
-            "langs": (
-                "English",
-                "French",
-                "Hawaiian",
-                "Maori",
-                "Pama-Nyungan",
-                "Tahitan"
-            )
-        }
-    ],
+    "Where are you from?": (
+        "North America. You might know Chinese, Cree, Creole, English, French, Navajo, Spanish, etc.",
+        "South/Central America. You might know Creole, English, German. Guarani, Mayan, Portuguese, QueChua, "
+        "Spanish, etc.",
+        "Western Europe. You might know Dutch, English, French, German, Itallian, Norwegian, Portuguese, Spanish, etc.",
+        "Eastern Europe. You maight know English, Finnish, Polish, Romanian, Russian, Ukrainian, etc.",
+        "Middle East/North Africa. You might know Arabic, Berber, English, Farsi, French, Hebrew, Turkish, etc.",
+        "Sub-Saharan Africa.  You might know Arabic, English, French, Hausa, Lingala, Oromo, Portuguese, Swahili, Twi,"
+        " Yoruba, etc.",
+        "Southern Asia.  You might know Bengali, Dari, English, Hindi, Nepali, Sinhalese, Tamil, Urdu etc.",
+        "South East Asia.  You may know Arabic, English, Filipino, Hindi, Indonesian, Khmer, Malayan, Vietnamese, etc.",
+        "Eastern Asia. You might know Cantonese, Chinese, English, Japanese, Korean, Mandarin Chinese, Mongolian, etc.",
+        "Oceana/Pacific Islands.  You might know English, French, Hawaiian, Maori, Pama-Nyungan, Tahitian, etc."
+    ),
     "What are you like?":
         (
             "Shy and secretive",
@@ -178,9 +65,6 @@ BASIC_LIFEPATH = {
         "fingerless gloves",
         "Strange contacts"
     ),
-
-    # Motivations and Relationships
-
     "What do you value most?": (
         "Money",
         "Honor",

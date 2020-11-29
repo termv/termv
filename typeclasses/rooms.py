@@ -36,7 +36,7 @@ class Room(DefaultRoom):
                 overriding the call (unused by default).
         """
 
-        def char_string(char):
+        def char_string(con, char):
             """
             Format the display from the character object to show some information about each character in the room
             when one does a look command.
@@ -69,7 +69,7 @@ class Room(DefaultRoom):
             if con.destination:
                 exits.append(con)
             elif con.has_account:
-                users.append(char_string(con))
+                users.append(char_string(con, looker))
             else:
                 # things can be pluralized
                 things[key].append(con)
