@@ -33,7 +33,7 @@ from evennia.settings_default import *
 
 # This is the name of your game. Make it catchy!
 SERVERNAME = "TerminalVelocity"
-
+WEBSERVER_PORTS = [(80, 4005)]
 
 ######################################################################
 # Settings given in secret_settings.py override those in this file.
