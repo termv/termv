@@ -83,6 +83,12 @@ class Room(DefaultRoom):
         for user in users:
             string += user
         string += "\n"
+        if things:
+            string += "--->> |hObjects|n >>".ljust(82, "-") + "\n"
+            for k, v in things:
+                string += f"{'x' + str(len(v)) + ' A ' if len(v) > 1 else 'A '} " \
+                          f"{v[0].get_display_name(looker)} " \
+                          f"{v[0].db.placement if v[0].db.placement else 'sits here'}\n"
         if exits:
             string += "--->> |hExits|n >>".ljust(82, "-") + "\n"
             for ext in exits:
