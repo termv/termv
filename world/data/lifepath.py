@@ -1,4 +1,39 @@
 # Cultural Origins
+INDEX_DICTS = [
+    "personality",
+    "motivations",
+    "family"
+]
+
+INDEX_LISTS = [
+    "friends",
+    "enemies",
+    "lovers"
+]
+
+SECTIONS = {
+    "personality": (
+        "Where are you from?",
+        "What are you like?",
+        "What's your preferred clothing style?",
+        "What kind of hair style do you prefer?",
+        "Affection you are never seen without?"
+    ),
+    "motivations": (
+        "What do you value most?",
+        "How do you feel about most people?",
+        "Most valued person in your life?",
+        "Most valued possession you own?",
+    ),
+    "family": (
+        "What's your original family origin?",
+        "What was your childhood environment?",
+        "What was your family crisis?"
+    ),
+    "goals": ["What's Your Goal?"]
+
+}
+
 BASIC_LIFEPATH = {
     "Where are you from?": (
         "North America. You might know Chinese, Cree, Creole, English, French, Navajo, Spanish, etc.",
@@ -126,7 +161,7 @@ BASIC_LIFEPATH = {
         "Reclaimers",
         "Edgerunners"
     ),
-    "What was your childhood enviornment?": (
+    "What was your childhood environment?": (
         "Ran on the street with no adult supervision.",
         "Spent a safe Corp Zone walled off from the rest of the City.",
         "In a  Nomad pack moving from place to place",
@@ -145,8 +180,8 @@ BASIC_LIFEPATH = {
         "Your family was imprisoned and you alone escaped.",
         "Your family vanished. You are the only remaining member.",
         "Your family was killed and you were the only survivor",
-        "Your family was involved with a long term conspiracy, organization, or assiociation, such as a crime family or\
-         revolutionary group."
+        "Your family was involved with a long term conspiracy, organization, or assiociation, such as a crime"
+        " family or revolutionary group.",
         "Your family was scattered to the winds due to misfortune.",
         "Your family was cursed with a hereditary feud that has lasted for generations.",
         "You are the inheritor of a family debt; You must honor this debt before moving on with your life."
@@ -155,70 +190,70 @@ BASIC_LIFEPATH = {
 # Your Friends
 
 FRIENDS = (
-    "Like an older sibbling to you.",
-    "Like a younger sibbling to you.",
-    "A teacher or mentor.",
-    "A partner of coworker.",
-    "A former lover.",
-    "An old enemy.",
-    "Like a parent to you.",
-    "An old childhood friend.",
-    "Someone you know from the street.",
-    "Someone with a common interest or goal."
+    "They are like an older sibling to you.",
+    "They are like a younger sibling to you.",
+    "They are a teacher or mentor.",
+    "They are a partner or coworker.",
+    "They are a former lover.",
+    "They are an old enemy.",
+    "They are like a parent to you.",
+    "They're an old childhood friend.",
+    "They are Someone you know from the street.",
+    "They are someone with a common interest or goal."
 )
 
 # Your Enemies
 
 ENEMY = (
-    "Ex-friend",
-    "Ex-lover",
-    "Estranged relative",
-    "Childhood enemy",
-    "Person working for you",
-    "Person you work for",
-    "Partner or coworker",
-    "Corporate exec",
-    "Goverment official",
-    "Boostganger"
+    "An ex-friend.",
+    "An ex-lover.",
+    "An estranged relative.",
+    "A childhood enemy.",
+    "A Person working for you.",
+    "A Person you work for.",
+    "A Partner or coworker.",
+    "A Corporate exec.",
+    "A Goverment official.",
+    "A Boostganger."
 )
 
 CAUSE = (
-    "Caused the loss of face or status.",
-    "Caused the loss of lover, friend or relative.",
-    "Caused a major public humiliation.",
-    "Accused the other of cowardice or some other major personal flaw.",
-    "Deserted or betrayed the other.",
-    "Turned down the other's offer of a job or romantic involvement",
+    "One of you caused the loss of face or status.",
+    "One of you caused the loss of a lover, friend or relative.",
+    "One of you caused the other a major public humiliation.",
+    "One of you accused the other of cowardice or some other major personal flaw.",
+    "They deserted or betrayed you.",
+    "One of you turned down the other's offer of a job or romantic involvement",
     "You just don't like each other.",
     "One of you was a romantic rival.",
-    "One of you was a business rival",
+    "One of you was a business rival.",
     "One of you set the other up for a crime they didn't commit."
 )
 
 THROW_AT_YOU = (
-    "Just themselves and even they won't go out of their way.",
-    "Just themselves.",
-    "Just themselves and a close friend.",
-    "Themselves and (1D6/2) friends.",
-    "Themselves and (1D10/2) friends.",
-    "An entire gang of at least (1D10 + 5) people.",
-    "The local cops of other Lawmen.",
-    "A powerful gang lord or small Corporation.",
-    "A Powerful Corporation",
-    "An entire city or government agency."
+    "They're on their own, and even they won't go out of their way.",
+    "it'll just be you and them.",
+    "They may show up with a close friend.",
+    "They'll show up with (1D6/2) friends.",
+    "They'll show up with (1D10/2) friends.",
+    "They have an entire gang of at least (1D10 + 5) people.",
+    "They're connected to the local cops of other Lawmen.",
+    "They're a powerful gang lord or, or head of a small Corporation.",
+    "A Powerful Corporation has their back.",
+    "An entire city or government agency is out to help them."
 )
 
 REVENGE = (
-    "Avoid the scum.",
-    "Avoid the scum.",
-    "Go on a murderous rage and try to physically rip their face off.",
-    "Go on a murderous rage and try to physically rip their face off.",
-    "Backstab them indirectly.",
-    "Backstab them indirectly.",
-    "Verbally attack them",
-    "Verbally attack them",
-    "Set them up for a crime or other transgression they didn't commit.",
-    "Set out to murder or maim them."
+    "avoid the scum.",
+    "avoid the scum.",
+    "go on a murderous rage and try to physically rip their face off.",
+    "go on a murderous rage and try to physically rip their face off.",
+    "backstab them indirectly.",
+    "backstab them indirectly.",
+    "verbally attack them",
+    "verbally attack them",
+    "set them up for a crime or other transgression they didn't commit.",
+    "set out to murder or maim them."
 )
 
 # Love affairs
@@ -239,14 +274,480 @@ TRAGIC_LOVE_AFFAIR = (
 # Your Life Goals
 
 GOALS = (
-    "Get rid of a bad reputation.",
-    "Gain power and control.",
-    "Get off the streets no matter what it takes.",
-    "Cause pain and suffering to anyone that crosses you.",
-    "Live down your past life and try to forget it.",
-    "Hunt down those responsible for your miserable life and make them pay.",
-    "Get what's rightfully yours.",
-    "Save if possible, anyone else involved in your background, like a lover, or family member.",
-    "Gain fame and recognition.",
-    "Become feared and respected."
+    "To get rid of a bad reputation.",
+    "To gain power and control.",
+    "To get off the streets no matter what it takes.",
+    "To cause pain and suffering to anyone that crosses you.",
+    "To live down your past life and try to forget it.",
+    "To hunt down those responsible for your miserable life and make them pay.",
+    "To get what's rightfully yours.",
+    "To save if possible, anyone else involved in your background, like a lover, or family member.",
+    "To gain fame and recognition.",
+    "To become feared and respected."
 )
+
+ROLE_PATHS = {
+    "Rockerboy": {
+        "What kind of Rockerboy are you?": (
+            "Musician",
+            "Slam Poet",
+            "Street Artist",
+            "Performance Artist",
+            "Comedian",
+            "Orator",
+            "Politico",
+            "Rap Artist",
+            "DJ",
+            "Idoru"
+        ),
+        "Are you part of a group? Were you?": (
+            "You're a life-long solo musician.",
+            "You're part of an active group.",
+            "You were in a group, but you were a jerk and the rest of the group voted you out.",
+            "You were in a group, but you got caught sleeping around with another member's mainline.",
+            'You were in a group, but the rest of the group was killed in a tragic "accident."',
+            'You were in a group, but the rest of the group was murdered or otherwise broken up by external enemies.',
+            'You were in a group, but the group broke up over "creative differences."',
+            'You were in a group, but you decided to go solo.'
+        ),
+        "Where do you perform?": (
+            'Alternative Cafes',
+            'Private Clubs',
+            'Seedy Dive Bars',
+            'Guerrilla Performances',
+            'Nightclubs Around the City',
+            'On the Data Pool'
+        ),
+        "Who's gunning for you/your group?": (
+            'Old group member who thinks you did them dirty.',
+            'Rival group or artist trying to steal market share.',
+            'Corporate enemies who don\'t like your message.',
+            'Critic or other "influencer" trying to bring you down.',
+            'Older media star who feels threatened by your rising fame.',
+            'Romantic interest or media figure who wants revenge for personal reasons.'
+        )
+    },
+    "Solo": {
+        "What kind of Solo are you?": (
+            "Bodyguard",
+            "Street Muscle for Hire",
+            "Corporate Enforcer who takes jobs on the side",
+            "Corporate or Freelance Black Ops Agent",
+            "Local Vigilante for Hire",
+            "Assassin/Hitman for Hire"
+        ),
+        "What's Your Moral Compass Like?": (
+            'Always working for good, trying to take out the "bad guys."',
+            "Always spare the innocent (elderly, women, children, pets)",
+            "Will occasionally slip and do unethical or bad things, but it's rare.",
+            "Ruthless and profit centered; you will work for anyone, take any job for the money",
+            "Willing to bend the rules (and the law) to get the job done.",
+            "Totally evil. You engage in illegal, unethical work all the time; in fact, you enjoy it."
+        ),
+        "What's Your Operational Territory?": (
+            "A Corporate Zone",
+            "Combat Zones",
+            "The whole City",
+            "The territory of a single Corporation",
+            "The territory of a particular Fixer or contact",
+            "Wherever the money takes you"
+        ),
+        "Who's Gunning for You?": (
+            "A Corporation you may have angered.",
+            "A boostergang you may have tackled earlier.",
+            "Corrupt Lawmen or Lawmen who mistakenly think you're guilty of something.",
+            "A rival Solo from another Corp.",
+            "A Fixer who sees you as a threat.",
+            "A rival Solo who sees you as their nemesis."
+        )
+    },
+    "Netrunner": {
+        "What Kind of Runner are You?": (
+            "Freelancer who will hack for hire.",
+            'Corporate "clone runner" who hacks for the Man.',
+            "Hacktivist interested in cracking systems and exposing bad guys.",
+            "Just likes to crack systems for the fun of it.",
+            "Part of a regular team of freelancers.",
+            "Hack for a Media, politico, or Lawman who hires you as needed."
+        ),
+        "Do you have a Partner? What are they like?": (
+            "No partner; you hack alone",
+            "Family member",
+            "Old friend",
+            "Possible romantic partner as well",
+            "Secret partner who might be a rogue AI. Might.",
+            "Secret partner with mob/gang connection",
+            "Secret partner with Corporate connections"
+        ),
+        "What's Your Workspace Like?": (
+            "There are screens everywhere.",
+            "It looks better in Virtuality, you swear.",
+            "It's a filthy bed covered in wires.",
+            "Corporate, modular, and utilitarian.",
+            "Minimalist, clean, and organized.",
+            "It's taken over your entire living space."
+        ),
+        "Who are Some of Your Other Clients?": (
+            "Local Fixers who send you clients.",
+            "Local gangers who also protect your work area while you sweep for NET threats.",
+            'Corporate Execs who use you for "black project" work.',
+            "Local Solos or other combat types who use you to keep their personal systems secure.",
+            "Local Nomads and Fixers who use you to keep their family systems secure.",
+            "You work for yourself and sell whatever data you can find on the NET."
+        ),
+        "Where Do You Get Your Programs?": (
+            "Dig around in old abandoned City Zones.",
+            "Steal them from other Netrunners you brain-burn.",
+            "Have a local Fixer supply programs in exchange for hack work.",
+            "Corporate Execs supply you with programs in exchange for your services.",
+            "You have backdoors into a few Corproate warehouses.",
+            "You hit the Night Markets and score programs whenever you can."
+        ),
+        "Who's Gunning for You?": (
+            "You think it might be a rogue AI or a NET Ghost. Either way, it's bad news.",
+            "Rival Netrunners who just don't like you.",
+            "Corporates who want you to work for them exclusively.",
+            'Lawmen who consider you an illegal "black hat" and want to bust you.',
+            "Old clients who think you screwed them over.",
+            "Fixer or another client who wants your services exclusively."
+        )
+    },
+    "Tech": {
+        "What Kind of Tech are You?": (
+            "Cyberware Technician",
+            "Vehicle Mechanic",
+            "Jack of All Trades",
+            "Small Electronics Technician",
+            "Weaponsmith",
+            "Crazy Inventor",
+            "Robot and Drone Mechanic",
+            "Heavy Machinery Mechanic",
+            "Scavenger",
+            "Nautical Mechanic"
+        ),
+        "Who's your Partner?": (
+            "You don't have one",
+            "Family member",
+            "Old friend",
+            "Possible romantic partner as well",
+            "Mentor",
+            "Secret partner with mob/gang connections",
+            "Secret partner with Corporate connections"
+        ),
+        "What's Your Workspace Like?": (
+            "A mess strewn with blueprint paper.",
+            "Everything is color coded, but it's still a nightmare.",
+            "Totally digital and obsessively backed up every day.",
+            "You design everything on your Agent.",
+            "You keep everything just in case you need it later.",
+            "Only you understand your filing system."
+        ),
+        "Who are Your Main Clients?": (
+            "Local Fixers who send you clients.",
+            "Local gangers who also protect your work area or home.",
+            'Corporate Execs who use you for "black project" work.',
+            "Local Solos or other combat types who use you for weapon upkeep.",
+            'Local Nomads and Fixers who bring you "found" tech to repair.',
+            "You work for yourself and sell what you invent/repair."
+        ),
+        "Where Do You Get Your Supplies?": (
+            "Scavenge the wreckage you find in abandoned City Zones.",
+            "Strip gear from bodies after firefights.",
+            "Have a local Fixer bring you supplies in exchange for repair work.",
+            "Corporate Exects supply you with stuff in exchange for your services.",
+            "You have backdoor into a few Corporate warehouses.",
+            "You hit the Night Markets and score deals whenever you can."
+        ),
+        "Who's Gunning For You?": (
+            "Combat Zone gangers who want you to work for them exclusively.",
+            "Rival Tech trying to steal your customers.",
+            "Corporates who want you to work for them exclusively.",
+            "Larger manufacturer trying to bring you down because your mods are a threat.",
+            "Old client who thinks you screwed them over.",
+            "Rival Tech trying to beat you out for resources and parts."
+        )
+    },
+    "Medtech": {
+        "What Kind of Medtech are You?": (
+            "Surgeon",
+            "General Practitioner",
+            "Trauma Medic",
+            "Psychiatrist",
+            "Cyberpsycho Therapist",
+            "Ripperdoc",
+            "Cryosystems Operator",
+            "Pharmacist",
+            "Bodysculptor",
+            "Forensic Pathologist"
+        ),
+        "What is your Partner like?": (
+            "You don't have one; they would just hold you back",
+            "Trauma Team group",
+            "Old friend",
+            "Possible romantic partner as well",
+            "Family member",
+            "Secret partner with mob/gang connections",
+            "Secret partner with Corporate connections"
+        ),
+        "What's Your Workspace Like?": (
+            "Sterilized daily in the morning like clockwork.",
+            "It's not state-of-the-art anymore, but it's comfortable to you.",
+            "Your cryo equipment is also used to cool drinks.",
+            "Everything possible is single-use and stored compacted until needed.",
+            "Not as clean as many of your patients may have hoped.",
+            "Meticulously organized, sharpened, and sterilized."
+        ),
+        "Who are Your Main Clients?": (
+            "Local Fixers who send you clients.",
+            "Local gangers who also protect your work area or home in exchange for medical help.",
+            'Corporate Execs who use you for "black project" medical work.',
+            "Local Solos or other combat types who use you for medical help.",
+            "Local Nomads and Fixers who bring you wounded clients.",
+            "Trauma Team paramedical work."
+        ),
+        "Where Do You Get Your Supplies?": (
+            "Scavenge stashes of medical supplies you find in abandoned City Zones.",
+            "Strip parts from bodies after firefights.",
+            "Have a local Fixer bring you supplies in exchange for medical work.",
+            "Corporate Execs or Trauma Team supply you with stuff in exchange for your services.",
+            "You have a backdoor into a few Corporate or Hospital warehouses.",
+            "You hit the Night Markets and score deals whenever you can."
+        )
+    },
+    "Media": {
+        "What Kind of Media are You?": (
+            "Blogger",
+            "Writer (Books)",
+            "Videographer",
+            "Documentarian",
+            "Investigative Reporter",
+            "Street Scribe"
+        ),
+        "How Does Your Work Reach the Public?": (
+            "Monthly magazine",
+            "Blog",
+            "Mainstream vid feed",
+            "News channel",
+            '"Book" sales',
+            "Screamsheets"
+        ),
+        "How Ethical are You?": (
+            "Fair, honest reporting, strong ethical practices. You only report the verifiable truth.",
+            "Fair and honest reporting, but willing to go on hearsay and rumor if that's what it takes.",
+            "Will occasionally slip and do unethical things, but it's rare. You have some standards.",
+            "Willing to bend any rules to get the bad guys. But only the bad guys.",
+            "Ruthless and determined to make it big, even if it means breaking the law. You're a muckraker.",
+            "Totally corrupt. You take bribes, engage in illegal, unethical reporting all the time. Your pen is for "
+            "hire to the highest bidder."
+        ),
+        "What Types of Stories Do You Want to Tell?": (
+            "Political Intrigue",
+            "Ecological Impact",
+            "Celebrity News",
+            "Corporate Takedowns",
+            "Editorials",
+            "Propaganda"
+        )
+    },
+    "Exec": {
+        "What Kind of Corp Do You Work For?": (
+            "Financial",
+            "Media and Communications",
+            "Cybertech and Medical Technologies",
+            "Pharmaceuticals and Biotech",
+            "Food Clothing or other General Consumables",
+            "Energy Production",
+            "Personal Electronics and Robotics",
+            "Corporate Services",
+            "Consumer Services",
+            "Real Estate and Construction"
+        ),
+        "What Division Do You Work In?": (
+            "Procurement",
+            "Manufacturing",
+            "Research and Development",
+            "Human Resources",
+            "Public Affairs/Publicity/Advertising",
+            "Mergers and Acquisitions"
+        ),
+        "How Good/Bad is Your Corp?": (
+            "Always working for good, fully supporting ethical practices.",
+            "Operates as a fair and honest business all the time.",
+            "Will occasionally slip and do unethical things, but it's rare.",
+            "Willing to bend the rules to get what it needs.",
+            "Ruthless and profit-centered, willing to do some bad things.",
+            "Totally evil. Will engage in illegal, unethical business all the time."
+        ),
+        "Where is Your Corp Based?": (
+            "One city",
+            "Several cities",
+            "Statewide",
+            "National",
+            "International, offices in a few major cities",
+            "International, offices everywhere"
+        ),
+        "Who's Gunning for Your Group?": (
+            "Rival Corp in the same industry.",
+            "Law enforcement is watching you.",
+            "Local Media wants to bring you down.",
+            "Different divisions in your own company are feuding with each other.",
+            "Local government doesn't like your Corp.",
+            "International Corporations are eyeing you for a hostile takeover."
+        ),
+        "Current State with Your Boss": (
+            "Your Boss mentors you but watch out for their enemies.",
+            "Your Boss gives you a free hand and doesn't want to know what you're up to.",
+            "Your Boss is a micromanager who tries to meddle in your work.",
+            "Your Boss is a psycho whose unpredictable outbursts are offset by quiet paranoia.",
+            "Your Boss is cool and watches your back against rivals.",
+            "Your Boss is threatened by your meteoric rise and is planning to knife you."
+        )
+    },
+    "Lawman": {
+        "What is Your Position on the Force?": (
+            "Guard",
+            "Standard City Patrol Zone",
+            "Criminal Investigation",
+            "Special Weapons and Tactics",
+            "Motor Patrol",
+            "Internal Affairs"
+        ),
+        "How Wide is Your Group's Jurisdiction?": (
+            "Corporate Zones",
+            "Standard Beat or Patrol",
+            "Combat Zones",
+            "Outer City",
+            "Recovery Zones",
+            "Open Highways"
+        ),
+        "How Corrupt is Your Group?": (
+            "Fair, honest policing, strong ethical practices.",
+            "Fair and honest policing, but hard on lawbreakers.",
+            "Will occasionally slip and do unethical things, but it's rare.",
+            "Willing to bend any rules to get the bad guys.",
+            "Ruthless and determined to control The Street, even if it means breaking the law.",
+            "Totally corrupt. You take bribes, engage in illegal, and unethical business all the time."
+        ),
+        "Who's Gunning for Your Group?": (
+            "Organized Crime",
+            "Boostergangs",
+            "Police Accountability Group",
+            "Dirty Politicians",
+            "Smugglers",
+            "Street Criminals",
+        ),
+        "Who is Your Group's Major Target?": (
+            "Organized Crime",
+            "Boostergangs",
+            "Drug Runners",
+            "Dirty Politicians",
+            "Smugglers",
+            "Street Crime"
+        )
+    },
+    "Fixer": {
+        "What Kind of Fixer are You?": (
+            "Broker deals between rival gangs.",
+            "Procure rare or atypical resources for exclusive clientele."
+            "Specialize in brokering Solo or Tech services as an agent."
+            "Supply a regular resource for the Night Markets, like food, medicines, or drugs."
+            "Procure highly illegal resources, like street drugs or milspec weapons."
+            "Supply resources for Techs and Medtechs, like parts and medical supplies."
+            "Operate several successful Night Markets, although not as owner."
+            "Broker use contracts for heavy machinery, military vehicles, and aircraft."
+            "Broker deals as a fence for scavengers raiding Corps or Combat Zones."
+            "Act as an exclusive agent for a Media, Rockerboy, or a Nomad Pack."
+        ),
+        "About your Partner": (
+            "You don't have one; you work alone",
+            "Family Member",
+            "Old friend",
+            "Possible romantic partner as well",
+            "Mentor",
+            "Secret partner with mob/gang connections",
+            "Secret partner with Corporate connections"
+        ),
+        'What\'s Your "Office" Like?': (
+            "You don't have one. You like to keep it mobile.",
+            "A booth in a local bar.",
+            "All Data Pool messages and anonymous dead drops.",
+            "Spare room in a warehouse, shop, or clinic.",
+            "An otherwise abandoned building.",
+            "The lobby of a cube hotel."
+        ),
+        "Who are Your Side Clients?": (
+            "Local Rockerboys or Medias who use you to get them gigs or contacts.",
+            "Local gangers who also protect your work area or home.",
+            'Corporate Execs who use you for "black project" procurement work.',
+            "Local Solos or other combat types who use you to get them jobs or contacts.",
+            "Local Nomads and Fixers who use you to set up transactions or deals.",
+            "Local politicos or Execs who depend on you for finding out information."
+        ),
+        "Who's Gunning for You?": (
+            "Combat Zone gangers who want you to work for them exclusively.",
+            "Rival Fixers trying to steal your clients.",
+            "Execs who want you to work for them exclusively.",
+            'Enemy of a former client who wants to clean up "loose ends"—like you.',
+            "Old client who thinks you screwed them over.",
+            "Rival Fixer trying to beat you out for resources and parts."
+        )
+    },
+    "Nomad": {
+        "How Big is Your Pack?": (
+            "A single extended tribe or family",
+            "A couple dozen members",
+            "Forty or fifty members",
+            "A hundred or more members",
+            "A Blood Family (hundreds of members)",
+            "An Affiliated Family (made of several Blood Families)"
+        ),
+        "What Kind of Nomad Pack Are You In?": (
+            "Land: Gogang",
+            "Land: Passenger transport",
+            "Land: Chautauqua/school",
+            "Land: Traveling show/carnival",
+            "Land: Migrant farmers",
+            "Land: Cargo transport",
+            "Land: Shipment protection",
+            "Land: Smuggling",
+            "Land: Mercenary army",
+            "Land: Construction work gang"
+            "Air: Piracy",
+            "Air: Cargo transport"
+            "Air: Passenger transport"
+            "Air: Aircraft protection"
+            "Air: Smuggling"
+            "Air: Combat support"
+            "Sea: Piracy"
+            "Sea: Cargo transport"
+            "Sea: Passenger transport"
+            "Sea: Smuggling"
+            "Sea: Combat support"
+            "Sea: Submarine warfare"
+        ),
+        "What Do You Do for Your Pack?": (
+            "Scout (negotiator)",
+            "Outrider (protection, weapons)",
+            "Transport pilot/driver",
+            "Loadmaster (large cargo mover, trucker)",
+            "Solo smuggler",
+            "Procurement (fuel, vehicles, etc.)"
+        ),
+        "What's Your Pack's Overall Philosophy?": (
+            "Always working for good; your Pack accepts others, just wants to get along.",
+            "It's more like a family business. Operates as a fair and honest concern.",
+            "Will occasionally slip and do unethical things, but it's rare.",
+            "Willing to bend the rules whenever they get in the way to get what the Pack needs.",
+            "Ruthless and self-centered, willing to do some bad things if it will get the Pack ahead.",
+            "Totally evil. You rage up and down the highways, killing, looting, and just terrorizing everyone.",
+        ),
+        "Who's Gunning for Your Pack?": (
+            "Organized Crime",
+            "Boostergangs",
+            "Drug Runners",
+            "Dirty Politicians",
+            "Rival Packs in the same businesses",
+            "Dirty Cops"
+        )
+    }
+}
