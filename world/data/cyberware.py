@@ -11,7 +11,7 @@ CYBERWARE = {
 }
 
 
-class CyberHandler():
+class CyberHandler:
 
     def __init__(self):
         """

@@ -11,6 +11,7 @@ inheritance.
 
 """
 from evennia import DefaultObject
+from world.commands.chargen_cmdset import ChargenCmdSet
 
 
 class Object(DefaultObject):
@@ -160,3 +161,11 @@ class Object(DefaultObject):
      """
 
     pass
+
+
+class Kiosk(Object):
+    """
+    This is the base object for a chargen kiosk.
+    """
+    def at_object_creation(self):
+        self.cmdset.add(ChargenCmdSet, permanent=True)
