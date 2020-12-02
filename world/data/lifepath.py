@@ -11,6 +11,7 @@ INDEX_LISTS = [
     "lovers"
 ]
 
+
 SECTIONS = {
     "personality": (
         "Where are you from?",
@@ -250,10 +251,10 @@ REVENGE = (
     "go on a murderous rage and try to physically rip their face off.",
     "backstab them indirectly.",
     "backstab them indirectly.",
-    "verbally attack them",
-    "verbally attack them",
+    "Attack them verbally.",
+    "Attack them verbally",
     "set them up for a crime or other transgression they didn't commit.",
-    "set out to murder or maim them."
+    "You'll be out for blood."
 )
 
 # Love affairs
@@ -648,14 +649,14 @@ ROLE_PATHS = {
     "Fixer": {
         "What Kind of Fixer are You?": (
             "Broker deals between rival gangs.",
-            "Procure rare or atypical resources for exclusive clientele."
-            "Specialize in brokering Solo or Tech services as an agent."
-            "Supply a regular resource for the Night Markets, like food, medicines, or drugs."
-            "Procure highly illegal resources, like street drugs or milspec weapons."
-            "Supply resources for Techs and Medtechs, like parts and medical supplies."
-            "Operate several successful Night Markets, although not as owner."
-            "Broker use contracts for heavy machinery, military vehicles, and aircraft."
-            "Broker deals as a fence for scavengers raiding Corps or Combat Zones."
+            "Procure rare or atypical resources for exclusive clientele.",
+            "Specialize in brokering Solo or Tech services as an agent.",
+            "Supply a regular resource for the Night Markets, like food, medicines, or drugs.",
+            "Procure highly illegal resources, like street drugs or milspec weapons.",
+            "Supply resources for Techs and Medtechs, like parts and medical supplies.",
+            "Operate several successful Night Markets, although not as owner.",
+            "Broker use contracts for heavy machinery, military vehicles, and aircraft.",
+            "Broker deals as a fence for scavengers raiding Corps or Combat Zones.",
             "Act as an exclusive agent for a Media, Rockerboy, or a Nomad Pack."
         ),
         "About your Partner": (

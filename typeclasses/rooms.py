@@ -85,12 +85,12 @@ class Room(DefaultRoom):
         string += "\n"
         if things:
             string += "--->> |hObjects|n >>".ljust(82, "-") + "\n"
-            for k, v in things:
-                string += f"{'x' + str(len(v)) + ' A ' if len(v) > 1 else 'A '} " \
-                          f"{v[0].get_display_name(looker)} " \
-                          f"{v[0].db.placement if v[0].db.placement else 'sits here'}\n"
+            for key in things:
+                string += f"{'x' + str(len(things[key])) + ' a ' if len(things[key]) > 1 else 'a '} " \
+                          f"{things[key][0].get_display_name(looker)} " \
+                          f"|h|x{things[key][0].db.placement if things[key][0].db.placement else 'sits here.'}|n\n"
         if exits:
-            string += "--->> |hExits|n >>".ljust(82, "-") + "\n"
+            string += "\n--->> |hExits|n >>".ljust(82, "-") + "\n"
             for ext in exits:
                 aliases = ext.aliases.all()
                 aliases.sort()
